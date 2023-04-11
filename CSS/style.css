@@ -55,3 +55,8 @@
 .separador{
     border: 2px solid green;
 }
+
+.imgs__products{
+    display: flex;
+    object-fit: cover;
+}
