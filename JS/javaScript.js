@@ -8,13 +8,12 @@ const allCategoryProducts = async (url) => {
   console.log("Estos son los productos", data);
   return data;
 };
+const mainImgsContainer = document.getElementById("main_imgs");
+console.log("Mi contenedor es:", mainImgsContainer);
 
 document.addEventListener("DOMContentLoaded", async () => {
   const infoProducts = await allCategoryProducts(URL_PRODUCTS);
   products = infoProducts;
-
-  const mainImgsContainer = document.getElementById("main_imgs");
-  console.log("Mi contenedor es:", mainImgsContainer);
 
   printImagsInHtml(mainImgsContainer, products);
 });
@@ -137,6 +136,56 @@ function printImagsInHtml(container, printProducts) {
     </article>`;
   });
 }
+//Mazamorra pilada grande
+//Mazamorra pilada pequeña      pilada
+// -----------barra de busqueda--------------
+const findProductByName = (searchProduct, listProducts) => {
+  const productsFilters = listProducts.filter((product) =>
+    product.name.toLowerCase().includes(searchProduct.toLowerCase())
+  );
+  const result = productsFilters.length ? productsFilters : listProducts;
+
+  const resultBusqueProducts = productsFilters.length
+    ? false
+    : "No existe este producto";
+
+  return {
+    resultSearch: result,
+    messageSearch: resultBusqueProducts,
+  };
+};
+
+const searchForm = document.getElementById("search__products");
+
+searchForm.addEventListener("submit", (event) => {
+  event.preventDefault();
+
+  console.log(" imprimiendo al hijo ", searchForm.children);
+
+  const formProducts = Array.from(searchForm.children);
+
+  console.log("este es el formularioo", formProducts);
+
+  const inputSearch = formProducts.find((item) => item.localName === "input");
+
+  console.log(inputSearch.value);
+
+  const searchProduct = inputSearch.value;
+
+  if (searchProduct) {
+    const response = findProductByName(searchProduct, products);
+
+    console.log(response);
+
+    if (response.messageSearch) {
+      Swal.fire("Oops!", response.messageSearch, "error");
+    }
+
+    printImagsInHtml(mainImgsContainer, response.resultSearch);
+  } else {
+    Swal.fire("Oops!", "No ingresaste ningun producto", "error");
+  }
+});
 
 /*const getAllPosts = async () => {
   const response = await fetch(url);

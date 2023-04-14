@@ -4,6 +4,10 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="viemport"
+      content="width=device-width, user_scalable=no, initial-scale=1.0, maximun-scale=1.0, minium-scale=1.0 "
+    />
     <title>Fastkart</title>
     <link rel="icon" href="./imagenes/icono.png" type="image-icon" />
     <link rel="stylesheet" href="./CSS/style.css" />
@@ -12,6 +16,12 @@
       rel="stylesheet"
       integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
       crossorigin="anonymous"
+    />
+    <link
+      id="rtl-link"
+      rel="stylesheet"
+      type="text/css"
+      href="../assets/css/vendors/bootstrap.css"
     />
     <script
       src="https://kit.fontawesome.com/f6b5d77da9.js"
@@ -47,7 +57,7 @@
     <header class="container">
       <nav class="navbar bg-body-tertiary p-4">
         <div class="row w-100">
-          <div class="col-2">
+          <div class="col-lg-2">
             <div class="theme-logo">
               <a>
                 <img
@@ -77,8 +87,8 @@
             </button>
           </div>
 
-          <div id="search__products" class="col-3">
-            <form class="d-flex" role="search">
+          <div class="col-5">
+            <form id="search__products" class="d-flex" role="search">
               <input
                 class="form-control me-2"
                 type="search"
@@ -94,27 +104,38 @@
             </form>
           </div>
 
-          <div class="col-5">
+          <div class="col-lg-3">
             <button class="btn btn-outline-success" type="submit">
-              <i
-                class="fa-solid fa-phone-volume fa-beat"
-                style="color: #000000"
-              ></i>
+              <img
+                src="./imagenes/telefono.png"
+                alt="telefono"
+                srcset=""
+                width="23px"
+              />
             </button>
             <button class="btn btn-outline-success" type="submit">
-              <i
-                class="fa-sharp fa-solid fa-heart fa-beat"
-                style="color: #000000"
-              ></i>
+              <img
+                src="./imagenes/corazon.jpg"
+                alt="corazon"
+                srcset=""
+                width="23px"
+              />
             </button>
             <button class="btn btn-outline-success" type="submit">
-              <i
-                class="fa-solid fa-cart-shopping fa-beat"
-                style="color: #000000"
-              ></i>
+              <img
+                src="./imagenes/carritoCompras.png"
+                alt="carritoCompras"
+                srcset=""
+                width="23px"
+              />
             </button>
             <button class="btn btn-outline-success" type="submit">
-              <i class="fa-solid fa-user fa-beat" style="color: #000000"></i>
+              <img
+                src="./imagenes/usuario.png"
+                alt="usuario"
+                srcset=""
+                width="23px"
+              />
             </button>
           </div>
         </div>
@@ -141,7 +162,7 @@
                 <ul class="navbar-nav">
                   <li class="nav-item dropdown">
                     <button
-                      class="btn btn-dark dropdown-toggle"
+                      class="btn btn-success dropdown-toggle"
                       data-bs-toggle="dropdown"
                       aria-expanded="false"
                     >
@@ -183,15 +204,79 @@
             </div>
           </div>
 
-          <div class="col-8">
-            <button type="button" class="btn">Hogar</button>
-            <button type="button" class="btn">Comercio</button>
-            <button type="button" class="btn">Productos</button>
-            <button type="button" class="btn">Mega Menu</button>
-            <button type="button" class="btn">Blog</button>
-            <button type="button" class="btn">Paginas</button>
-            <button type="button" class="btn">Vendedora</button>
-            <button type="button" class="btn">Contactos</button>
+          <div class="col-9">
+            <button type="button" class="btn">
+              Hogar
+              <img
+                src="./imagenes/desplegar.png"
+                alt="desplegar"
+                srcset=""
+                width="15px"
+              />
+            </button>
+            <button type="button" class="btn">
+              Comercio
+              <img
+                src="./imagenes/desplegar.png"
+                alt="desplegar"
+                srcset=""
+                width="15px"
+              />
+            </button>
+            <button type="button" class="btn">
+              Productos
+              <img
+                src="./imagenes/desplegar.png"
+                alt="desplegar"
+                srcset=""
+                width="15px"
+              />
+            </button>
+            <button type="button" class="btn">
+              Mega Menu
+              <img
+                src="./imagenes/desplegar.png"
+                alt="desplegar"
+                srcset=""
+                width="15px"
+              />
+            </button>
+            <button type="button" class="btn">
+              Blog
+              <img
+                src="./imagenes/desplegar.png"
+                alt="desplegar"
+                srcset=""
+                width="15px"
+              />
+            </button>
+            <button type="button" class="btn">
+              Paginas
+              <img
+                src="./imagenes/desplegar.png"
+                alt="desplegar"
+                srcset=""
+                width="15px"
+              />
+            </button>
+            <button type="button" class="btn">
+              Vendedora
+              <img
+                src="./imagenes/desplegar.png"
+                alt="desplegar"
+                srcset=""
+                width="15px"
+              />
+            </button>
+            <button type="button" class="btn">
+              Contactos
+              <img
+                src="./imagenes/desplegar.png"
+                alt="desplegar"
+                srcset=""
+                width="15px"
+              />
+            </button>
           </div>
 
           <div class="col-1">
@@ -204,38 +289,162 @@
     </section>
 
     <section id="all__productos__in__imag" class="container pt-2">
-      <div class="row g-4">
-        <div class="col-xl-8">
-          <div class="h-100">
+      <div class="container-fluid-lg">
+        <div class="row g-4">
+          <div class="col-xl-8 ratio_65">
+            <div class="home-contain h-100">
+              <div class="h-100">
+                <div
+                  class="h-100"
+                  style="
+                    background-image: url('https://themes.pixelstrap.com/fastkart/assets/images/vegetable/banner/1.jpg');
+                    background-size: cover;
+                    display: block;
+                    width: 850px;
+                  "
+                >
+                  <img
+                    src="https://themes.pixelstrap.com/fastkart/assets/images/vegetable/banner/1.jpg"
+                    alt="Verduras frescas"
+                    style="display: none"
+                  />
+
+                  <div class="home-detail p-center-left w-75">
+                    <div>
+                      <h5 class="mt-0 text-danger">
+                        Oferta exclusiva 30% de descuento
+                      </h5>
+                      <h1>
+                        Quédate en casa, <br />
+                        entregamos tus pedidos <br />
+                        a tu necesidades diarias.
+                      </h1>
+                      <p class="w-75 d-none d-sm-block">
+                        Las verduras contienen muchas vitaminas y minerales que
+                        son buenas para tu salud.
+                      </p>
+                      <button
+                        onclick=""
+                        class="btn btn-danger mt-xxl-4 mt-2 home-button mend-auto"
+                      >
+                        Comprar ahora
+                        <i
+                          class="fa-solid fa-arrow-right fa-beat"
+                          style="color: #000000"
+                        ></i>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-xl-4 ratio_65">
+            <div class="row g-4">
+              <div class="col-xl-12 col-md-6">
+                <div
+                  style="
+                    background-image: url('https://themes.pixelstrap.com/fastkart/assets/images/vegetable/banner/2.jpg');
+                    background-repeat: no-repeat;
+                    display: block;
+                  "
+                >
+                  <img
+                    src="https://themes.pixelstrap.com/fastkart/assets/images/vegetable/banner/2.jpg"
+                    class="bg-img blur-up lazyloaded"
+                    alt="Frutos secos"
+                    style="display: none"
+                  />
+                  <div class="home-detail p-center-left home-p-sm w-75">
+                    <div>
+                      <h2 class="mt-0 text-danger">45% de descuento</h2>
+                      <h4>
+                        Colección de frutos <br />
+                        secos
+                      </h4>
+                      <p class="w-75">Entregamos verduras y frutas orgánicas</p>
+                      <button
+                        onclick=""
+                        class="btn btn-animation mt-xxl-4 mt-2 home-button mend-auto"
+                      >
+                        Comprar ahora
+                        <i
+                          class="fa-solid fa-arrow-right fa-beat"
+                          style="color: #000000"
+                        ></i>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-xl-12 col-md-6">
+                <div
+                  style="
+                    background-image: url('https://themes.pixelstrap.com/fastkart/assets/images/vegetable/banner/3.jpg');
+                    display: block;
+                    height: 198px;
+                  "
+                >
+                  <img
+                    src="https://themes.pixelstrap.com/fastkart/assets/images/vegetable/banner/3.jpg"
+                    class="bg-img blur-up lazyloaded"
+                    alt="Frutos organicos"
+                    style="display: none"
+                  />
+                  <div class="home-detail p-center-left home-p-sm w-75">
+                    <div>
+                      <h3>Alimentos sanos</h3>
+                      <h4 class="text-danger">Mercado Orgánico</h4>
+                      <p>
+                        Comienza tus compras diarias con algo de comida orgánica
+                      </p>
+                      <button
+                        onclick=""
+                        class="btn btn-animation mt-xxl-4 mt-2 home-button mend-auto"
+                      >
+                        Comprar ahora
+                        <i
+                          class="fa-solid fa-arrow-right fa-beat"
+                          style="color: #000000"
+                        ></i>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section
+      id="Products__eggs__fruits__meat"
+      class="container ratio_60 wow fadeInUp pt-2"
+    >
+      <div class="container-fluid-lg">
+        <div class="row w-100">
+          <div class="col-3">
             <div
-              class="h-100"
               style="
-                background-image: url('https://themes.pixelstrap.com/fastkart/assets/images/vegetable/banner/1.jpg');
-                background-size: cover;
+                background-image: url('https://themes.pixelstrap.com/fastkart/assets/images/vegetable/banner/4.jpg');
                 display: block;
-                width: 850px;
+                height: 198px;
               "
             >
               <img
-                src="https://themes.pixelstrap.com/fastkart/assets/images/vegetable/banner/1.jpg"
-                alt="Verduras frescas"
+                src="https://themes.pixelstrap.com/fastkart/assets/images/vegetable/banner/4.jpg"
+                class="bg-img blur-up lazyloaded"
+                alt="Frutos organicos"
                 style="display: none"
               />
-
-              <div class="home-detail p-center-left w-75">
+              <div class="home-detail p-center-left home-p-sm w-75">
                 <div>
-                  <h5 class="mt-0 text-danger">
-                    Oferta exclusiva 30% de descuento
-                  </h5>
-                  <h1>
-                    Quédate en casa, <br />
-                    entregamos tus pedidos <br />
-                    a tu necesidades diarias.
-                  </h1>
-                  <p class="w-75 d-none d-sm-block">
-                    Las verduras contienen muchas vitaminas y minerales que son
-                    buenas para tu salud.
-                  </p>
+                  <h5 class="mt-0 text-danger">5% de descuento</h5>
+                  <h4>Grandes ofertas en artículos nuevos</h4>
+                  <p>Alimentos esenciales, huevos y productos lácteos.</p>
                   <a class="shop-button">
                     Comprar ahora
                     <i
@@ -247,199 +456,93 @@
               </div>
             </div>
           </div>
-        </div>
-
-        <div class="col-xl-4 ratio_65">
-          <div class="row g-4">
-            <div class="col-xl-12 col-md-6">
-              <div
-                style="
-                  background-image: url('https://themes.pixelstrap.com/fastkart/assets/images/vegetable/banner/2.jpg');
-                  background-repeat: no-repeat;
-                  display: block;
-                "
-              >
-                <img
-                  src="https://themes.pixelstrap.com/fastkart/assets/images/vegetable/banner/2.jpg"
-                  class="bg-img blur-up lazyloaded"
-                  alt="Frutos secos"
-                  style="display: none"
-                />
-                <div class="home-detail p-center-left home-p-sm w-75">
-                  <div>
-                    <h2 class="mt-0 text-danger">45% de descuento</h2>
-                    <h4>
-                      Colección de frutos <br />
-                      secos
-                    </h4>
-                    <p class="w-75">Entregamos verduras y frutas orgánicas</p>
-                    <a class="shop-button">
-                      Comprar ahora
-                      <i
-                        class="fa-solid fa-arrow-right fa-beat"
-                        style="color: #000000"
-                      ></i
-                    ></a>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div class="col-xl-12 col-md-6">
-              <div
-                style="
-                  background-image: url('https://themes.pixelstrap.com/fastkart/assets/images/vegetable/banner/3.jpg');
-                  display: block;
-                  height: 198px;
-                "
-              >
-                <img
-                  src="https://themes.pixelstrap.com/fastkart/assets/images/vegetable/banner/3.jpg"
-                  class="bg-img blur-up lazyloaded"
-                  alt="Frutos organicos"
-                  style="display: none"
-                />
-                <div class="home-detail p-center-left home-p-sm w-75">
-                  <div>
-                    <h3>Alimentos sanos</h3>
-                    <h4 class="text-danger">Mercado Orgánico</h4>
-                    <p>
-                      Comienza tus compras diarias con algo de comida orgánica
-                    </p>
-                    <a class="shop-button">
-                      Comprar ahora
-                      <i
-                        class="fa-solid fa-arrow-right fa-beat"
-                        style="color: #000000"
-                      ></i
-                    ></a>
-                  </div>
+          <div class="col-3">
+            <div
+              style="
+                background-image: url('https://themes.pixelstrap.com/fastkart/assets/images/vegetable/banner/5.jpg');
+                display: block;
+                height: 198px;
+              "
+            >
+              <img
+                src="https://themes.pixelstrap.com/fastkart/assets/images/vegetable/banner/5.jpg"
+                class="bg-img blur-up lazyloaded"
+                alt="Frutos organicos"
+                style="display: none"
+              />
+              <div class="home-detail p-center-left home-p-sm w-75">
+                <div>
+                  <h5 class="mt-0 text-danger">7% de descuento</h5>
+                  <h4>Compre más y ahorre más</h4>
+                  <p>Vegetales frescos.</p>
+                  <a class="shop-button">
+                    Comprar ahora
+                    <i
+                      class="fa-solid fa-right-long ms-2"
+                      style="color: #000000"
+                    ></i
+                  ></a>
                 </div>
               </div>
             </div>
           </div>
-        </div>
-      </div>
-    </section>
-
-    <section id="Products__eggs__fruits__meat" class="container pt-2">
-      <div class="row w-100">
-        <div class="col-3">
-          <div
-            style="
-              background-image: url('https://themes.pixelstrap.com/fastkart/assets/images/vegetable/banner/4.jpg');
-              display: block;
-              height: 198px;
-            "
-          >
-            <img
-              src="https://themes.pixelstrap.com/fastkart/assets/images/vegetable/banner/4.jpg"
-              class="bg-img blur-up lazyloaded"
-              alt="Frutos organicos"
-              style="display: none"
-            />
-            <div class="home-detail p-center-left home-p-sm w-75">
-              <div>
-                <h5 class="mt-0 text-danger">5% de descuento</h5>
-                <h4>Grandes ofertas en artículos nuevos</h4>
-                <p>Alimentos esenciales, huevos y productos lácteos.</p>
-                <a class="shop-button">
-                  Comprar ahora
-                  <i
-                    class="fa-solid fa-arrow-right fa-beat"
-                    style="color: #000000"
-                  ></i
-                ></a>
+          <div class="col-3">
+            <div
+              style="
+                background-image: url('https://themes.pixelstrap.com/fastkart/assets/images/vegetable/banner/6.jpg');
+                display: block;
+                height: 198px;
+              "
+            >
+              <img
+                src="https://themes.pixelstrap.com/fastkart/assets/images/vegetable/banner/6.jpg"
+                class="bg-img blur-up lazyloaded"
+                alt="Frutos organicos"
+                style="display: none"
+              />
+              <div class="home-detail p-center-left home-p-sm w-75">
+                <div>
+                  <h5 class="mt-0 text-danger">5% de descuento</h5>
+                  <h4>Carne orgánica preparada</h4>
+                  <p>Entregado a tu casa.</p>
+                  <a class="shop-button">
+                    Comprar ahora
+                    <i
+                      class="fa-solid fa-arrow-right fa-beat"
+                      style="color: #000000"
+                    ></i
+                  ></a>
+                </div>
               </div>
             </div>
           </div>
-        </div>
-        <div class="col-3">
-          <div
-            style="
-              background-image: url('https://themes.pixelstrap.com/fastkart/assets/images/vegetable/banner/5.jpg');
-              display: block;
-              height: 198px;
-            "
-          >
-            <img
-              src="https://themes.pixelstrap.com/fastkart/assets/images/vegetable/banner/5.jpg"
-              class="bg-img blur-up lazyloaded"
-              alt="Frutos organicos"
-              style="display: none"
-            />
-            <div class="home-detail p-center-left home-p-sm w-75">
-              <div>
-                <h5 class="mt-0 text-danger">7% de descuento</h5>
-                <h4>Compre más y ahorre más</h4>
-                <p>Vegetales frescos.</p>
-                <a class="shop-button">
-                  Comprar ahora
-                  <i
-                    class="fa-solid fa-right-long ms-2"
-                    style="color: #000000"
-                  ></i
-                ></a>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-3">
-          <div
-            style="
-              background-image: url('https://themes.pixelstrap.com/fastkart/assets/images/vegetable/banner/6.jpg');
-              display: block;
-              height: 198px;
-            "
-          >
-            <img
-              src="https://themes.pixelstrap.com/fastkart/assets/images/vegetable/banner/6.jpg"
-              class="bg-img blur-up lazyloaded"
-              alt="Frutos organicos"
-              style="display: none"
-            />
-            <div class="home-detail p-center-left home-p-sm w-75">
-              <div>
-                <h5 class="mt-0 text-danger">5% de descuento</h5>
-                <h4>Carne orgánica preparada</h4>
-                <p>Entregado a tu casa.</p>
-                <a class="shop-button">
-                  Comprar ahora
-                  <i
-                    class="fa-solid fa-arrow-right fa-beat"
-                    style="color: #000000"
-                  ></i
-                ></a>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-3">
-          <div
-            style="
-              background-image: url('https://themes.pixelstrap.com/fastkart/assets/images/vegetable/banner/7.jpg');
-              display: block;
-              height: 198px;
-            "
-          >
-            <img
-              src="https://themes.pixelstrap.com/fastkart/assets/images/vegetable/banner/7.jpg"
-              class="bg-img blur-up lazyloaded"
-              alt="Frutos organicos"
-              style="display: none"
-            />
-            <div class="home-detail p-center-left home-p-sm w-75">
-              <div>
-                <h5 class="mt-0 text-danger">4% de descuento</h5>
-                <h4>Frutos secos y frescos</h4>
-                <p>Nueces y bocadillos.</p>
-                <a class="shop-button">
-                  Comprar ahora
-                  <i
-                    class="fa-solid fa-arrow-right fa-beat"
-                    style="color: #000000"
-                  ></i
-                ></a>
+          <div class="col-3">
+            <div
+              style="
+                background-image: url('https://themes.pixelstrap.com/fastkart/assets/images/vegetable/banner/7.jpg');
+                display: block;
+                height: 198px;
+              "
+            >
+              <img
+                src="https://themes.pixelstrap.com/fastkart/assets/images/vegetable/banner/7.jpg"
+                class="bg-img blur-up lazyloaded"
+                alt="Frutos organicos"
+                style="display: none"
+              />
+              <div class="home-detail p-center-left home-p-sm w-75">
+                <div>
+                  <h5 class="mt-0 text-danger">4% de descuento</h5>
+                  <h4>Frutos secos y frescos</h4>
+                  <p>Nueces y bocadillos.</p>
+                  <a class="shop-button">
+                    Comprar ahora
+                    <i
+                      class="fa-solid fa-arrow-right fa-beat"
+                      style="color: #000000"
+                    ></i
+                  ></a>
+                </div>
               </div>
             </div>
           </div>
@@ -825,7 +928,6 @@
       integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
       crossorigin="anonymous"
     ></script>
-    \watch
     <script src="./JS/javaScript.js"></script>
   </body>
 </html>
