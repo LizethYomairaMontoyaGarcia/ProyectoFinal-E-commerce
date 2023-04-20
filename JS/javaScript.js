@@ -32,7 +32,7 @@ function printImagsInHtml(container, printProducts) {
               <div class="productImage">
                 <ul class="productOptionFavorite">
                   <li>
-                    <button>
+                    <button  >
                       <img
                         src="https://cdn-icons-png.flaticon.com/512/3722/3722014.png"
                         alt=""
@@ -136,8 +136,7 @@ function printImagsInHtml(container, printProducts) {
     </article>`;
   });
 }
-//Mazamorra pilada grande
-//Mazamorra pilada pequeña      pilada
+
 // -----------barra de busqueda--------------
 const findProductByName = (searchProduct, listProducts) => {
   const productsFilters = listProducts.filter((product) =>
@@ -186,6 +185,8 @@ searchForm.addEventListener("submit", (event) => {
     Swal.fire("Oops!", "No ingresaste ningun producto", "error");
   }
 });
+
+//-----------------------filtrar por categoria------------------------
 
 /*const getAllPosts = async () => {
   const response = await fetch(url);

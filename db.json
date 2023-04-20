@@ -85,7 +85,17 @@
             "categoria": "Frutas y verduras"
         }
         
-    ]
+    ],
     
+    "favorite":[
+        {
+
+        }
+    ],
+    "trolley":[
+        {
+
+        }
+    ]
 
 }
