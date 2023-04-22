@@ -85,35 +85,13 @@
       "category": "frutas y verduras"
     }
   ],
-  "favorite": [
+  "favorite": [],
+  "trolley": [],
+  "admin": [
     {
-      "id": 1,
-      "name": "Galletas de Chispas de chocolate",
-      "img": "https://themes.pixelstrap.com/fastkart/assets/images/vegetable/product/1.png",
-      "price": "$5.000",
-      "category": "galletas y bocadillos"
-    },
-    {
-      "id": 5,
-      "name": "Pierna de cordero cruda envase 5Kg",
-      "img": "https://themes.pixelstrap.com/fastkart/assets/images/vegetable/product/9.png",
-      "price": "$12.000",
-      "category": "carnes y Mariscos"
-    },
-    {
-      "id": 6,
-      "name": "Cold Brew cafe instantaneo 50g",
-      "img": "https://themes.pixelstrap.com/fastkart/assets/images/vegetable/product/2.png",
-      "price": "$7.000",
-      "category": "bebidas"
-    },
-    {
-      "id": 7,
-      "name": "Snack amor combo pack jowar sstick",
-      "img": "https://themes.pixelstrap.com/fastkart/assets/images/vegetable/product/4.png",
-      "price": "$10.000",
-      "category": "galletas y bocadillos"
+      "name": "lizeth montoya",
+      "email": "liz@gmail.com",
+      "password": "1234"
     }
-  ],
-  "trolley": []
+  ]
 }
