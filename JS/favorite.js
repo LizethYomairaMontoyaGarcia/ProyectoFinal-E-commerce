@@ -149,3 +149,9 @@ document.addEventListener("click", (e) => {
     eliminateProduct(URL_FAVORITE.concat("/"));
   }
 });
+
+//-----------------recargar a la pagina principal dandole click a la imegen----------
+const logoFastkar = document.querySelector(".logoFastkart");
+logoFastkar.addEventListener("click", () => {
+  window.location.href = "../index.html";
+});

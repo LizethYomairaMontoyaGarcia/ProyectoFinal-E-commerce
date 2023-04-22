@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="
+https://cdn.jsdelivr.net/npm/sweetalert2@11.7.3/dist/sweetalert2.all.min.js
+"></script>
+    <link
+      href="
+https://cdn.jsdelivr.net/npm/sweetalert2@11.7.3/dist/sweetalert2.min.css
+"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  </head>
+  <body>
+    <main class="main">
+      <section class="main__sections">
+        <h1>Inicie Sesión</h1>
+      </section>
+      <form class="form-admin">
+        <div>
+          <label forData-attribute="email" class="labelForm">correo:</label>
+          <input
+            type="text"
+            id="email"
+            placeholder="correo"
+            class="inputForm"
+          />
+        </div>
+        <div>
+          <label forData-attribute="password" class="labelForm"
+            >Contraseña:</label
+          >
+          <input
+            type="password"
+            id="password"
+            placeholder="Ingrese su contraseña"
+            class="inputForm"
+          />
+        </div>
+        <button type="submit">Iniciar Sesión como administrador</button>
+      </form>
+    </main>
+    <script src="../JS/loginadmin.js" type="module"></script>
+  </body>
+</html>
