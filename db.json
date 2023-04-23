@@ -83,13 +83,20 @@
       "img": "https://fundacionmujeresempresarias.org/wp-content/uploads/2016/08/cilantro.png",
       "price": "$1.000",
       "category": "frutas y verduras"
+    },
+    {
+      "id": 13,
+      "name": "aesd",
+      "img": "https://img.freepik.com/vector-gratis/conjunto-productos-aislados-alimentos-supermercado_1284-39967.jpg?w=2000",
+      "price": "33",
+      "category": "frutas"
     }
   ],
   "favorite": [],
   "trolley": [],
   "admin": [
     {
-      "id":1,
+      "id": 1,
       "name": "lizeth montoya",
       "email": "liz@gmail.com",
       "password": "1234"

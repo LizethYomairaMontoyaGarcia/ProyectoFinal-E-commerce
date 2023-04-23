@@ -76,7 +76,7 @@ const submitLoginAdmin = async (form) => {
         "success"
       ).then(() => {
         sessionStorage.setItem("user", JSON.stringify(admin[0]));
-        window.location = "./HTML/admin.html";
+        window.location = "admin.html";
       });
     } else {
       Swal.fire("Oops!", "datos de usuario incorrectos", "error").then(() => {

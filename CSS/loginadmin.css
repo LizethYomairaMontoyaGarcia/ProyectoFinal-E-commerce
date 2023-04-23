@@ -1,0 +1,76 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url("https://b7q5h9f5.rocketcdn.me/wp-content/uploads/2018/09/alimentacion-1024x576.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+}
+
+.iniciar_sesion {
+    text-align: center;
+
+}
+
+main {
+    width: 500px;
+    height: 493px;
+    padding: 16px;
+    border-radius: 10px;
+    margin: auto;
+    background-color: #ccc;
+}
+
+form label {
+    width: 72px;
+    font-weight: bold;
+    display: inline-block;
+    padding: 10px;
+}
+
+form input[type="text"],
+form input[type="password"] {
+    margin-bottom: 15px;
+    font-family: "Roboto", sans-serif;
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    border: none;
+    color: #000000;
+    font-size: 1em;
+    resize: none;
+}
+
+form input[type="submit"] {
+    width: 100%;
+    padding: 8px 16px;
+    margin-top: 32px;
+    border: 1px solid #000;
+    border-radius: 5px;
+    display: block;
+    color: #fff;
+    background-color: #000;
+}
+
+form input[type="submit"]:hover {
+    cursor: pointer;
+}
+
+form button {
+    display: flex;
+    background-color: #0da487;
+    ;
+    padding: 10px 45px 10px 45px;
+    border: 0px;
+    font-size: 1em;
+    color: white;
+    font-family: "Roboto", sans-serif;
+    text-align: center;
+}
+
+.button_iniciarSesion {
+    text-align: center;
+}
