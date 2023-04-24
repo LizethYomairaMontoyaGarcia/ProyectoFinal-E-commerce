@@ -20,6 +20,7 @@ document.addEventListener("DOMContentLoaded", async () => {
   printImagsInHtml(mainImgsContainer, products);
 });
 
+//llene el valor del carrito en el label, porque se recarga la pagina. 
 async function getIemQuantity(productId) {
   try {
     await allCategoryProducts(URL_TROLLEY.concat("/").concat(productId)).then(
@@ -255,8 +256,6 @@ setInterval(updateTime, 1000);
 
 document.addEventListener("click", (e) => {
   console.log("El evento click en el documento", e);
-  e.preventDefault();
-
   const itemQuantity = document.querySelector(
     ".itemQuantityClass".concat(e.target.id)
   );
@@ -273,7 +272,6 @@ document.addEventListener("click", (e) => {
   console.log("item value",itemQuantity.value);
     if (itemQuantity.value < product.stock) {
       itemQuantity.value = parseInt(itemQuantity.value) + 1;
-      product.stock = product.stock - 1;
     }
 
     const productTrolley = {
@@ -296,18 +294,21 @@ document.addEventListener("click", (e) => {
   } else if (trolleyDelete === "resta") {
     if (itemQuantity.value > 0) {
       itemQuantity.value = parseInt(itemQuantity.value) - 1;
-      product.stock = product.stock + 1;
     }
-    const deleteProductTrolley = async (url) => {
-      try {
-        await axios.delete(url, product);
-      } catch (error) {
-        alert("Ocurrio un error");
-      }
+    
+    const productTrolley = {
+      id: product.id,
+      name: product.name,
+      img: product.img,
+      price: parseInt(product.price),
+      itemQuantity: parseInt(itemQuantity.value),
+      category: product.category,
     };
-    //deleteProductTrolley(URL_TROLLEY);
+
+    updateProduct(URL_TROLLEY,productTrolley);
   }
 });
+
 
 //agregar producto,  segun la url
 
@@ -328,3 +329,19 @@ const updateProduct = async (url, product) => {
     alert("Ocurrio un error");
   }
 };
+
+//eliminar producto 
+const deleteProductTrolley = async (url, product) => {
+  try {
+    await axios.delete(url.concat("/").concat(product.id));
+  } catch (error) {
+    alert("Ocurrio un error");
+  }
+};
+
+
+function redirectTo(url){
+  window.location.href =url;
+}
+
+

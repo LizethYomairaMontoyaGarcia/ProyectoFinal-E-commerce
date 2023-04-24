@@ -2,18 +2,18 @@
   "product": [
     {
       "id": 1,
-      "name": "Galletas de Chispas de chocolate",
+      "name": "Galletas de Chispas de chocolate de caramelo",
       "img": "https://themes.pixelstrap.com/fastkart/assets/images/vegetable/product/1.png",
       "price": 6000,
-      "stock": 15,
+      "stock": 10,
       "category": "bocadillos"
     },
     {
       "id": 2,
-      "name": "Galletas de Mantequilla y queso",
+      "name": "Galletas de Mantequilla y queso gratinado",
       "img": "https://themes.pixelstrap.com/fastkart/assets/images/vegetable/product/3.png",
       "price": 6000,
-      "stock": 3,
+      "stock": 70,
       "category": "galletas y bocadillos"
     },
     {
@@ -21,12 +21,12 @@
       "name": "Yumitos chilli patatas Fritas 110g",
       "img": "https://themes.pixelstrap.com/fastkart/assets/images/vegetable/product/5.png",
       "price": 5000,
-      "stock": 2,
+      "stock": 80,
       "category": "bocadillos"
     },
     {
       "id": 4,
-      "name": "Leche tocnificada larga vida 1L",
+      "name": " Rica leche tocnificada larga vida 1L",
       "img": "https://themes.pixelstrap.com/fastkart/assets/images/vegetable/product/7.png",
       "price": 8000,
       "stock": 8,
@@ -42,7 +42,7 @@
     },
     {
       "id": 6,
-      "name": "Cold Brew cafe instantaneo 50g",
+      "name": "Cold Brew cafe instantaneo en lata 50g",
       "img": "https://themes.pixelstrap.com/fastkart/assets/images/vegetable/product/2.png",
       "price": 7000,
       "stock": 10,
@@ -50,7 +50,7 @@
     },
     {
       "id": 7,
-      "name": "Snack amor combo pack jowar sstick",
+      "name": "Snack amor combo pack jowar sstick con mantequilla",
       "img": "https://themes.pixelstrap.com/fastkart/assets/images/vegetable/product/4.png",
       "price": 10000,
       "stock": 10,
@@ -58,7 +58,7 @@
     },
     {
       "id": 8,
-      "name": "Manzanas 180g * Unidad",
+      "name": "Manzanas roja jugosa 180g * Unidad",
       "img": "https://www.clikisalud.net/wp-content/uploads/2015/03/manzana-D.jpg",
       "price": 1400,
       "stock": 10,
@@ -162,40 +162,7 @@
     }
   ],
   "favorite": [],
-  "trolley": [
-    {
-      "id": 1,
-      "name": "Galletas de Chispas de chocolate",
-      "img": "https://themes.pixelstrap.com/fastkart/assets/images/vegetable/product/1.png",
-      "price": 6000,
-      "itemQuantity": 3,
-      "category": "bocadillos"
-    },
-    {
-      "id": 2,
-      "name": "Galletas de Mantequilla y queso",
-      "img": "https://themes.pixelstrap.com/fastkart/assets/images/vegetable/product/3.png",
-      "price": 6000,
-      "itemQuantity": 4,
-      "category": "galletas y bocadillos"
-    },
-    {
-      "id": 3,
-      "name": "Yumitos chilli patatas Fritas 110g",
-      "img": "https://themes.pixelstrap.com/fastkart/assets/images/vegetable/product/5.png",
-      "price": 5000,
-      "itemQuantity": 3,
-      "category": "bocadillos"
-    },
-    {
-      "id": 4,
-      "name": "Leche tocnificada larga vida 1L",
-      "img": "https://themes.pixelstrap.com/fastkart/assets/images/vegetable/product/7.png",
-      "price": 8000,
-      "itemQuantity": 2,
-      "category": "bebidas"
-    }
-  ],
+  "trolley": [],
   "admin": [
     {
       "id": 1,
@@ -203,5 +170,8 @@
       "email": "liz@gmail.com",
       "password": "1234"
     }
+  ],
+  "purchasedProducts": [
+    
   ]
 }

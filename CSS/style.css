@@ -53,7 +53,7 @@
 }
 
 body {
-    margin: 20px
+    margin: 10px
 }
 
 .separador {
@@ -107,7 +107,7 @@ body {
 
 .container__imgs {
     padding: 10px;
-    border: 1px solid rgb(158, 158, 158);
+    border: 1px solid rgb(209, 209, 209);
     width: 220px;
     border-radius: 10px;
 }
@@ -147,7 +147,7 @@ body {
 
 /*botones de agregar favoritos*/
 
-
+/*reloj*/
 .contReloj{
     background: rgba(240, 16, 16, 0.7);
     display: block;
