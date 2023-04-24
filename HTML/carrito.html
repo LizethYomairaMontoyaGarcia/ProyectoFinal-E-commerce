@@ -5,8 +5,465 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <link rel="stylesheet" href="../CSS/carrito.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link
+      id="rtl-link"
+      rel="stylesheet"
+      type="text/css"
+      href="../assets/css/vendors/bootstrap.css"
+    />
+    <script
+      src="https://kit.fontawesome.com/f6b5d77da9.js"
+      00000000000
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
   </head>
   <body>
-    <button></button>
+    <div
+    class="row w-100"
+    style="background-color: #0da487; height: 40px; align-items: center"
+  >
+    <div class="col-7 grid text-center">
+      <div><strong>Algo que amas ya está a la venta</strong></div>
+    </div>
+    <div class="col-3 grid text-center">
+      <div>
+        <img
+          src="https://img.freepik.com/vector-gratis/ilustracion-bandera-estados-unidos_53876-18165.jpg"
+          alt="Bandera de estados unidos"
+          width="25px"
+          height="18px"
+        />
+        <strong> English</strong>
+      </div>
+    </div>
+    <div class="col-1 grid text-center">
+      <div><strong> USD</strong></div>
+    </div>
+  </div>
+
+  <header class="container">
+    <nav class="navbar bg-body-tertiary p-4">
+      <div class="row w-100">
+        <div class="col-lg-2">
+          <div class="theme-logo">
+            <a>
+              <img
+                src="../imagenes/logo.PNG"
+                class="blur-up lazyloaded"
+                alt="logo Fastkart"
+                width="140px"
+              />
+            </a>
+          </div>
+        </div>
+
+        <div class="col-2">
+          <button
+            class="btn btn-outline-success"
+            type="submit"
+            style="align-items: center"
+          >
+            <h6>
+              <img
+                src="https://static.vecteezy.com/system/resources/previews/016/716/478/non_2x/google-maps-icon-free-png.png"
+                alt="ubicacion"
+                width="25px"
+                height="25px"
+              />
+              Localidad
+            </h6>
+          </button>
+        </div>
+
+        <div class="col-5">
+          <form id="search__products" class="d-flex" role="search">
+            <input
+              class="form-control me-2"
+              type="search"
+              placeholder="Buscar"
+              aria-label="Search"
+            />
+            <button class="btn btn-outline-success" type="submit">
+              <i
+                class="fa-solid fa-magnifying-glass"
+                style="color: #000000"
+              ></i>
+            </button>
+          </form>
+        </div>
+
+        <div class="col-lg-3">
+          <button class="btn" type="submit">
+            <img
+              src="../imagenes/telefono.png"
+              alt="telefono"
+              srcset=""
+              width="23px"
+            />
+          </button>
+          <button class="btn" type="submit">
+            <img
+              src="../imagenes/corazon.jpg"
+              alt="corazon"
+              srcset=""
+              width="23px"
+            />
+          </button>
+          <button class="btn" type="submit">
+            <img
+              src="../imagenes/carritoCompras.png"
+              alt="carritoCompras"
+              srcset=""
+              width="23px"
+            />
+          </button>
+          <div class="btn-group">
+            <button class="btn" type="submit">
+              <img
+                src="../imagenes/usuario.png"
+                alt="usuario"
+                srcset=""
+                width="23px"
+              />
+              <div class="onhover-div onhover-div-login">
+                <ul class="user-box-name">
+                  <li class="header__loginAdmin">
+                    <a href="./HTML/loginadmin.html"> Acceso</a>
+                  </li>
+
+                  <li class="product-box-contain">
+                    <a href="sign-up.html">Registrarse</a>
+                  </li>
+                </ul>
+              </div>
+            </button>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <section class="container">
+    <nav class="navbar navbar-expand-lg navbar-dark">
+      <div class="row w-100">
+        <div class="col-2">
+          <div class="container-fluid">
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse "
+              data-bs-target="#navbarNavDarkDropdown"
+              aria-controls="navbarNavDarkDropdown"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDarkDropdown">
+              <ul class="navbar-nav">
+                <li class="nav-item dropdown">
+                  <button
+                    class="btn btn-success dropdown-toggle"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    Categorias
+                  </button>
+                  <ul class="dropdown-menu dropdown-menu-dark">
+                    <li>
+                      <a class="dropdown-item" href="#">Frutas y verduras</a>
+                    </li>
+                    <li><a class="dropdown-item" href="#">Bebidas</a></li>
+                    <li>
+                      <a class="dropdown-item" href="#">Carnes y Mariscos</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#"
+                        >Desayunos y lacteos</a
+                      >
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">Comidas frias</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#"
+                        >Galletas y bocadillos</a
+                      >
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">Vinos y alcoholes</a>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-9">
+          <button type="button" class="btn">
+            Hogar
+            <img
+              src="../imagenes/desplegar.png"
+              alt="desplegar"
+              srcset=""
+              width="15px"
+            />
+          </button>
+          <button type="button" class="btn">
+            Comercio
+            <img
+              src="../imagenes/desplegar.png"
+              alt="desplegar"
+              srcset=""
+              width="15px"
+            />
+          </button>
+          <button type="button" class="btn">
+            Productos
+            <img
+              src="../imagenes/desplegar.png"
+              alt="desplegar"
+              srcset=""
+              width="15px"
+            />
+          </button>
+          <button type="button" class="btn">
+            Mega Menu
+            <img
+              src="../imagenes/desplegar.png"
+              alt="desplegar"
+              srcset=""
+              width="15px"
+            />
+          </button>
+          <button type="button" class="btn">
+            Blog
+            <img
+              src="../imagenes/desplegar.png"
+              alt="desplegar"
+              srcset=""
+              width="15px"
+            />
+          </button>
+          <button type="button" class="btn">
+            Paginas
+            <img
+              src="../imagenes/desplegar.png"
+              alt="desplegar"
+              srcset=""
+              width="15px"
+            />
+          </button>
+          <button type="button" class="btn">
+            Vendedora
+            <img
+              src="../imagenes/desplegar.png"
+              alt="desplegar"
+              srcset=""
+              width="15px"
+            />
+          </button>
+          <button type="button" class="btn">
+            Contactos
+            <img
+              src="../imagenes/desplegar.png"
+              alt="desplegar"
+              srcset=""
+              width="15px"
+            />
+          </button>
+        </div>
+
+        <div class="col-1">
+          <button class="btn btn-outline-success" type="submit">
+            <i class="fa-sharp fa-solid fa-bolt" style="color: #000000"></i>
+          </button>
+        </div>
+      </div>
+    </nav>
+  </section>
+    <section id="productos" class="section__container">
+      <div class="section">
+        <div class="row w-100">
+          <div class="col-3 p-5 section__products">
+            <h5>Categorias</h5>
+            <div class="w-100 d-flex">
+              <hr class="bg-green w-50 separador" />
+            </div>
+            <div class="section__button">
+              <ul
+                class="nav flex-column"
+                style="padding: 0; margin: 0; list-style: none"
+              >
+                <li class="nav-item">
+                  <button
+                    class="filterProductsButton"
+                    name="frutas"
+                    category="category"
+                  >
+                    <img
+                      src="../imagenes/frutasVerduras.svg"
+                      alt="frutas y Verduras"
+                      width="25px"
+                      category="category"
+                      name="frutas"
+                    />
+                    <a category="category" name="frutas">Frutas y verduras</a>
+                  </button>
+                </li>
+                <br />
+                <li class="nav-item">
+                  <button
+                    class="filterProductsButton"
+                    name="bebidas"
+                    category="category"
+                  >
+                    <img
+                      src="../imagenes/bebidas.svg"
+                      alt="Bebidas"
+                      width="20px"
+                      name="bebidas"
+                      category="category"
+                    />
+                    <a name="bebidas" category="category">Bebidas</a>
+                  </button>
+                </li>
+                <br />
+                <li class="nav-item">
+                  <button
+                    class="filterProductsButton"
+                    name="carnes"
+                    category="category"
+                  >
+                    <img
+                      src="../imagenes/carnes.svg"
+                      alt="carnes"
+                      width="23px"
+                      category="category"
+                      name="carnes"
+                    />
+                    <a category="category" name="carnes"> Carnes y Mariscos</a>
+                  </button>
+                </li>
+                <br />
+                <li class="nav-item">
+                  <button
+                    class="filterProductsButton"
+                    name="desayunos"
+                    category="category"
+                  >
+                    <img
+                      src="../imagenes/desayunos.svg"
+                      alt="desayunos"
+                      width="25px"
+                      category="category"
+                      name="desayunos"
+                    />
+                    <a category="category" name="desayunos"
+                      >Desayunos y lacteos</a
+                    >
+                  </button>
+                </li>
+                <br />
+                <li class="nav-item">
+                  <button
+                    class="filterProductsButton"
+                    name="frias"
+                    category="category"
+                  >
+                    <img
+                      src="../imagenes/frozen.svg"
+                      alt="frozen"
+                      width="20px"
+                      category="category"
+                      name="frias"
+                    />
+                    <a category="category" name="frias"> Comidas frias</a>
+                  </button>
+                </li>
+                <br />
+                <li class="nav-item">
+                  <button
+                    class="filterProductsButton"
+                    name="bocadillos"
+                    category="category"
+                  >
+                    <img
+                      src="../imagenes/galletasBocadillos.svg"
+                      alt="galletas y Bocadillos"
+                      width="20px"
+                      category="category"
+                      name="bocadillos"
+                    />
+                    <a category="category" name="bocadillos"
+                      >Galletas y bocadillos</a
+                    >
+                  </button>
+                </li>
+
+                <br />
+                <li class="nav-item">
+                  <button
+                    class="filterProductsButton"
+                    name="alcohol"
+                    category="category"
+                  >
+                    <img
+                      src="../imagenes/alcohol.svg"
+                      alt="alcohol"
+                      width="20px"
+                      height="30px"
+                      category="category"
+                      name="alcohol"
+                    />
+                    <a category="category" name="alcohol">Vinos y Alcoholes</a>
+                  </button>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="col-9 p-5">
+            <div>
+              <h5><strong>Top Guardar hoy</strong></h5>
+            </div>
+            <div>
+              <i
+                class="fa-sharp fa-solid fa-seedling"
+                style="color: #46c85c"
+              ></i>
+            </div>
+            <div>
+              <p>
+                No pierdas esta oportunidad con un descuento especial solo por
+                esta semana.
+              </p>
+              <div class="contReloj">
+                <p>Expires in :</p>
+                <p id="horas"></p>
+                <p>:</p>
+                <p id="minutos"></p>
+                <p>:</p>
+                <p id="segundos"></p>
+              </div>
+            </div>
+
+            <div class="containerMainImgs p-3">
+              <section id="main_imgs" class="main_imgs"></section>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <script src="../JS/carrito.js" type="module"></script>
   </body>
 </html>

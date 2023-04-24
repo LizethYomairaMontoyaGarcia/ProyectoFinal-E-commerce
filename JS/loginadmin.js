@@ -22,17 +22,17 @@ const formValidateAdmin = () => {
   const inputsForm = document.querySelectorAll(".inputForm");
   const inputs = Array.from(inputsForm);
   const labels = Array.from(labelsForm);
-console.log("inputs", inputs)
-console.log("inputs formulario", inputsForm)
+  console.log("inputs", inputs);
+  console.log("inputs formulario", inputsForm);
 
   inputs.forEach((item) => {
-    console.log("item", item)
+    console.log("item", item);
     if (item.id) {
-        console.log("item", item)
+      console.log("item", item);
       formDataAdmin[item.id] = item.value;
     }
   });
-  console.log("estoy en el formulario", formDataAdmin)
+  console.log("estoy en el formulario", formDataAdmin);
 
   for (const key in formDataAdmin) {
     if (!formDataAdmin[key]) {

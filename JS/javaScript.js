@@ -3,6 +3,7 @@ let products = [];
 
 const URL_PRODUCTS = " http://localhost:3000/product";
 const URL_FAVORITE = " http://localhost:3000/favorite";
+const URL_TROLLEY = " http://localhost:3000/trolley";
 
 const allCategoryProducts = async (url) => {
   const { data } = await axios.get(url);
@@ -19,11 +20,28 @@ document.addEventListener("DOMContentLoaded", async () => {
   printImagsInHtml(mainImgsContainer, products);
 });
 
+async function getIemQuantity(productId) {
+  try {
+    await allCategoryProducts(URL_TROLLEY.concat("/").concat(productId)).then(
+      (value) => {
+        const itemQuantity = document.querySelector(
+          ".itemQuantityClass".concat(productId)
+        );
+      
+        itemQuantity.value = value.itemQuantity;
+      }
+    );
+  } catch {}
+}
+
 function printImagsInHtml(container, printProducts) {
   console.log("Estoy dentro de la funcion");
 
   container.innerHTML = "";
   printProducts.forEach((printProduct) => {
+
+    getIemQuantity(printProduct.id);
+
     container.innerHTML += `
     <article class="container__imgs" data-imgs="imgs" name="${printProduct.id}">
       <img
@@ -82,28 +100,42 @@ function printImagsInHtml(container, printProducts) {
               <div class="input-group">
                 <button
                   type="button"
-                  class="qty-left-minus"
-                  data-type="minus"
-                  data-field=""
-                  tabindex="0"
+                  class="resta"
+                  data-resta="resta"
+                  id="${printProduct.id}"
                 >
-                  <i class="fa fa-minus" aria-hidden="true"></i>
+              
+              <img
+              src="./imagenes/resta.jpg"
+              alt="resta"
+              width="17px"
+              data-resta="resta"
+              id="${printProduct.id}"
+            />
                 </button>
                 <input
-                  class="form-control input-number qty-input"
+                  class="form-control input-number itemQuantityClass${printProduct.id}"
                   type="text"
+                  disabled
                   name="quantity"
                   value="0"
                   tabindex="0"
+                  id="${printProduct.id}"
+                  data-atribute="itemQuantity${printProduct.id}"
                 />
                 <button
                   type="button"
-                  class="qty-right-plus"
-                  data-type="plus"
-                  data-field=""
-                  tabindex="0"
+                  class="suma"
+                  data-suma="suma"
+                  id="${printProduct.id}"
                 >
-                  <i class="fa fa-plus" aria-hidden="true"></i>
+                <img
+                src="./imagenes/suma.png"
+                alt="suma"
+                width="20px"
+                data-suma="suma"
+                id="${printProduct.id}"
+              />
                 </button>
               </div>
             </div>
@@ -194,3 +226,105 @@ document.addEventListener("click", (event) => {
     aggregateProduct(URL_FAVORITE);
   }
 });
+
+//------------------------reloj------------------------
+function updateTime() {
+  var date = new Date();
+  var seconds = date.getSeconds();
+  var minutes = date.getMinutes();
+  var hour = date.getHours();
+
+  var elementoHour = document.getElementById("horas");
+  var elementoMinutes = document.getElementById("minutos");
+  var elementoSeconds = document.getElementById("segundos");
+
+  elementoHour.textContent = hour;
+  elementoMinutes.textContent = minutes;
+  elementoSeconds.textContent = seconds;
+
+  if (hour >= 8 && minutes >= 1 && hour < 12) {
+  }
+  if (hour >= 12 && minutes >= 1 && hour < 19) {
+  }
+  if (hour >= 19 && minutes >= 1) {
+  }
+}
+setInterval(updateTime, 1000);
+
+//------------------------Agregar al carro------------------------
+
+document.addEventListener("click", (e) => {
+  console.log("El evento click en el documento", e);
+  e.preventDefault();
+
+  const itemQuantity = document.querySelector(
+    ".itemQuantityClass".concat(e.target.id)
+  );
+  console.log("Item", itemQuantity);
+
+  const trolleyAddition = e.target.getAttribute("data-suma");
+  const trolleyDelete = e.target.getAttribute("data-resta");
+
+  //buscar el produto que está agregando
+  const id = e.target.getAttribute("id");
+  const product = products.find((item) => item.id == id);
+
+  if (trolleyAddition === "suma") {
+  console.log("item value",itemQuantity.value);
+    if (itemQuantity.value < product.stock) {
+      itemQuantity.value = parseInt(itemQuantity.value) + 1;
+      product.stock = product.stock - 1;
+    }
+
+    const productTrolley = {
+      id: product.id,
+      name: product.name,
+      img: product.img,
+      price: parseInt(product.price),
+      itemQuantity: parseInt(itemQuantity.value),
+      category: product.category,
+    };
+
+    console.log("producto nuevo stock", product.stock);
+
+    if (productTrolley.itemQuantity == 1) {
+      aggregateProduct(URL_TROLLEY, productTrolley);
+    } else {
+      updateProduct(URL_TROLLEY, productTrolley);
+    }
+    /*para restar producto del carro*/
+  } else if (trolleyDelete === "resta") {
+    if (itemQuantity.value > 0) {
+      itemQuantity.value = parseInt(itemQuantity.value) - 1;
+      product.stock = product.stock + 1;
+    }
+    const deleteProductTrolley = async (url) => {
+      try {
+        await axios.delete(url, product);
+      } catch (error) {
+        alert("Ocurrio un error");
+      }
+    };
+    //deleteProductTrolley(URL_TROLLEY);
+  }
+});
+
+//agregar producto,  segun la url
+
+const aggregateProduct = async (url, product) => {
+  try {
+    await axios.post(url, product);
+  } catch (error) {
+    alert("Ocurrio un error");
+  }
+};
+
+//actualizar producto segun url
+
+const updateProduct = async (url, product) => {
+  try {
+    await axios.put(url.concat("/").concat(product.id), product);
+  } catch (error) {
+    alert("Ocurrio un error");
+  }
+};

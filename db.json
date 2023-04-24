@@ -4,96 +4,198 @@
       "id": 1,
       "name": "Galletas de Chispas de chocolate",
       "img": "https://themes.pixelstrap.com/fastkart/assets/images/vegetable/product/1.png",
-      "price": "$5.000",
-      "category": "galletas y bocadillos"
+      "price": 6000,
+      "stock": 15,
+      "category": "bocadillos"
     },
     {
       "id": 2,
       "name": "Galletas de Mantequilla y queso",
       "img": "https://themes.pixelstrap.com/fastkart/assets/images/vegetable/product/3.png",
-      "price": "$6.000",
+      "price": 6000,
+      "stock": 3,
       "category": "galletas y bocadillos"
     },
     {
       "id": 3,
-      "name": "Yumitos chilli patatas Fritas 100g",
+      "name": "Yumitos chilli patatas Fritas 110g",
       "img": "https://themes.pixelstrap.com/fastkart/assets/images/vegetable/product/5.png",
-      "price": "$6.000",
-      "category": "galletas y bocadillos"
+      "price": 5000,
+      "stock": 2,
+      "category": "bocadillos"
     },
     {
       "id": 4,
       "name": "Leche tocnificada larga vida 1L",
       "img": "https://themes.pixelstrap.com/fastkart/assets/images/vegetable/product/7.png",
-      "price": "$8.000",
+      "price": 8000,
+      "stock": 8,
       "category": "bebidas"
     },
     {
       "id": 5,
       "name": "Pierna de cordero cruda envase 5Kg",
       "img": "https://themes.pixelstrap.com/fastkart/assets/images/vegetable/product/9.png",
-      "price": "$12.000",
+      "price": 12000,
+      "stock": 10,
       "category": "carnes y Mariscos"
     },
     {
       "id": 6,
       "name": "Cold Brew cafe instantaneo 50g",
       "img": "https://themes.pixelstrap.com/fastkart/assets/images/vegetable/product/2.png",
-      "price": "$7.000",
+      "price": 7000,
+      "stock": 10,
       "category": "bebidas"
     },
     {
       "id": 7,
       "name": "Snack amor combo pack jowar sstick",
       "img": "https://themes.pixelstrap.com/fastkart/assets/images/vegetable/product/4.png",
-      "price": "$10.000",
+      "price": 10000,
+      "stock": 10,
       "category": "galletas y bocadillos"
     },
     {
       "id": 8,
       "name": "Manzanas 180g * Unidad",
       "img": "https://www.clikisalud.net/wp-content/uploads/2015/03/manzana-D.jpg",
-      "price": "$1.400",
-      "category": "frutas y verduras"
-    },
-    {
-      "id": 9,
-      "name": "Peras 250g * Unidad",
-      "img": "https://farmaciaribera.es/blog/wp-content/uploads/2020/01/Beneficios-de-comer-peras-1024x680.jpg",
-      "price": "$1.200",
+      "price": 1400,
+      "stock": 10,
       "category": "frutas y verduras"
     },
     {
       "id": 10,
       "name": "Zanahorias 100g * Unidad",
       "img": "https://d1cft8rz0k7w99.cloudfront.net/n/b/a/7/d/ba7d4acb79e450ab4d21d235810323927da6ed6b_Zanahoria.jpg",
-      "price": "$800",
+      "price": 800,
+      "stock": 10,
       "category": "frutas y verduras"
     },
     {
       "id": 11,
-      "name": "Tomate 120g * Unidad",
-      "img": "https://hortamar.es/wp-content/uploads/tomate-gordo-hortamar-1.jpg",
-      "price": "$800",
-      "category": "frutas y verduras"
+      "name": "Vino concha y toro 750ml",
+      "img": "https://elamigodelanoche.com/wp-content/uploads/2020/09/vino-concha-y-toro-reservado-cabernet-sauvignon-750-ml.jpg",
+      "price": 80000,
+      "stock": 10,
+      "category": "vinos y alcoholes"
     },
     {
       "id": 12,
-      "name": "Cilantro 100g * Unidad",
-      "img": "https://fundacionmujeresempresarias.org/wp-content/uploads/2016/08/cilantro.png",
-      "price": "$1.000",
-      "category": "frutas y verduras"
+      "name": "Ron caldas 750ml",
+      "img": "https://cdn.shopify.com/s/files/1/0530/2920/8249/products/botella_ron_tradicional_750ML_FNcopia_1200x1200.png?v=1612458465",
+      "price": 60000,
+      "stock": 10,
+      "category": "vinos y alcoholes"
     },
     {
       "id": 13,
-      "name": "aesd",
-      "img": "https://img.freepik.com/vector-gratis/conjunto-productos-aislados-alimentos-supermercado_1284-39967.jpg?w=2000",
-      "price": "33",
-      "category": "frutas"
+      "name": "Jagermeister 750ml",
+      "img": "https://bevgo.com.co/wp-content/uploads/2021/05/3038.jpg",
+      "price": 90000,
+      "stock": 10,
+      "category": "vinos y alcoholes"
+    },
+    {
+      "id": 14,
+      "name": "Camarones pacotilla 500g",
+      "img": "https://media.justo.mx/products/17382-Camar%C3%B3n_Pacotilla_41_50_500g.jpg",
+      "price": 2500,
+      "stock": 10,
+      "category": "carnes y Mariscos"
+    },
+    {
+      "id": 15,
+      "name": "Res 1kl",
+      "img": "https://us.123rf.com/450wm/atoss/atoss1812/atoss181200281/114122990-carnes-de-res-crudas-frescas.jpg?ver=6",
+      "price": 12000,
+      "stock": 10,
+      "category": "carnes y Mariscos"
+    },
+    {
+      "id": 16,
+      "name": "Trucha 500g",
+      "img": "https://i.blogs.es/5f918d/pescado/450_1000.webp",
+      "price": 8000,
+      "stock": 10,
+      "category": "carnes y Mariscos"
+    },
+    {
+      "id": 17,
+      "name": "Cocacola sin azucar 2.5l",
+      "img": "https://static.merqueo.com/images/products/app/f37b2c3d-0296-4e85-8b6b-de7303239889.png",
+      "price": 5000,
+      "stock": 10,
+      "category": "bebidas"
+    },
+    {
+      "id": 18,
+      "name": "Queso fresco mediano",
+      "img": "https://biotrendies.com/wp-content/uploads/2015/07/queso-fresco.jpg",
+      "price": 5000,
+      "stock": 10,
+      "category": "desayunos y lacteos"
+    },
+    {
+      "id": 19,
+      "name": "Mantequilla",
+      "img": "https://okdiario.com/img/2019/05/29/como-elegir-una-buena-mantequilla.jpg",
+      "price": 4000,
+      "stock": 10,
+      "category": "desayunos y lacteos"
+    },
+    {
+      "id": 20,
+      "name": "Pan aliñado, paquete*10",
+      "img": "https://www.portafolio.co/files/article_multimedia/uploads/2016/02/18/56c6395e51aa8.jpeg",
+      "price": 8000,
+      "stock": 10,
+      "category": "desayunos y lacteos"
+    },
+    {
+      "id": 21,
+      "name": "Cilantro 500g",
+      "img": "https://supermercadoahorramas.com.co/rails/active_storage/representations/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBNy9aSWc9PSIsImV4cCI6bnVsbCwicHVyIjoiYmxvYl9pZCJ9fQ==--123cdd0192198275b3133aa0edb76d8f85130512/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9TY21WemFYcGxYM1J2WDJacGRGc0hhUUlnQTJrQ0lBTTZER052Ym5abGNuUkpJZ2hxY0djR09nWkZWRG9LYzJGMlpYSjdDRG9NY1hWaGJHbDBlV2xmT2dwemRISnBjRlE2RDJKaFkydG5jbTkxYm1SYkNHa0IvMmtCLzJrQi93PT0iLCJleHAiOm51bGwsInB1ciI6InZhcmlhdGlvbiJ9fQ==--f9b6205701877dad933126b17f2a1a57fbbba520/77020130481.jpg?locale=es",
+      "price": 800,
+      "stock": 10,
+      "category": "frutas y verduras"
     }
   ],
   "favorite": [],
-  "trolley": [],
+  "trolley": [
+    {
+      "id": 1,
+      "name": "Galletas de Chispas de chocolate",
+      "img": "https://themes.pixelstrap.com/fastkart/assets/images/vegetable/product/1.png",
+      "price": 6000,
+      "itemQuantity": 3,
+      "category": "bocadillos"
+    },
+    {
+      "id": 2,
+      "name": "Galletas de Mantequilla y queso",
+      "img": "https://themes.pixelstrap.com/fastkart/assets/images/vegetable/product/3.png",
+      "price": 6000,
+      "itemQuantity": 4,
+      "category": "galletas y bocadillos"
+    },
+    {
+      "id": 3,
+      "name": "Yumitos chilli patatas Fritas 110g",
+      "img": "https://themes.pixelstrap.com/fastkart/assets/images/vegetable/product/5.png",
+      "price": 5000,
+      "itemQuantity": 3,
+      "category": "bocadillos"
+    },
+    {
+      "id": 4,
+      "name": "Leche tocnificada larga vida 1L",
+      "img": "https://themes.pixelstrap.com/fastkart/assets/images/vegetable/product/7.png",
+      "price": 8000,
+      "itemQuantity": 2,
+      "category": "bebidas"
+    }
+  ],
   "admin": [
     {
       "id": 1,

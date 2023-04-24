@@ -106,7 +106,7 @@
           </div>
 
           <div class="col-lg-3">
-            <button class="btn btn-outline-success" type="submit">
+            <button class="btn" type="submit">
               <img
                 src="./imagenes/telefono.png"
                 alt="telefono"
@@ -114,7 +114,7 @@
                 width="23px"
               />
             </button>
-            <button class="btn btn-outline-success" type="submit">
+            <button class="btn" type="submit">
               <img
                 src="./imagenes/corazon.jpg"
                 alt="corazon"
@@ -122,7 +122,7 @@
                 width="23px"
               />
             </button>
-            <button class="btn btn-outline-success" type="submit">
+            <button class="btn" type="submit">
               <img
                 src="./imagenes/carritoCompras.png"
                 alt="carritoCompras"
@@ -131,7 +131,7 @@
               />
             </button>
             <div class="btn-group">
-              <button class="btn btn-outline-success" type="submit">
+              <button class="btn" type="submit">
                 <img
                   src="./imagenes/usuario.png"
                   alt="usuario"
@@ -146,10 +146,6 @@
 
                     <li class="product-box-contain">
                       <a href="sign-up.html">Registrarse</a>
-                    </li>
-
-                    <li class="product-box-contain">
-                      <a href="forgot.html">Has olvidado tucontraseña</a>
                     </li>
                   </ul>
                 </div>
@@ -205,11 +201,6 @@
                       <li>
                         <a class="dropdown-item" href="#"
                           >Galletas y bocadillos</a
-                        >
-                      </li>
-                      <li>
-                        <a class="dropdown-item" href="#"
-                          >Comestibles y alimentos</a
                         >
                       </li>
                       <li>
@@ -686,25 +677,7 @@
                     >
                   </button>
                 </li>
-                <br />
-                <li class="nav-item">
-                  <button
-                    class="filterProductsButton"
-                    name="comestibles"
-                    category="category"
-                  >
-                    <img
-                      src="./imagenes/comestibles.svg"
-                      alt="comestibles"
-                      width="20px"
-                      category="category"
-                      name="comestibles"
-                    />
-                    <a category="category" name="comestibles"
-                      >Comestibles y alimentos</a
-                    >
-                  </button>
-                </li>
+
                 <br />
                 <li class="nav-item">
                   <button
@@ -729,7 +702,7 @@
 
           <div class="col-9 p-5">
             <div>
-              <h3><strong>Top Guardar hoy</strong></h3>
+              <h5><strong>Top Guardar hoy</strong></h5>
             </div>
             <div>
               <i
@@ -738,58 +711,21 @@
               ></i>
             </div>
             <div>
-              No pierdas esta oportunidad con un descuento especial solo por
-              esta semana.
-            </div>
-
-            <div class="timing-box">
-              <div class="timing">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="24"
-                  height="24"
-                  fill="none"
-                  stroke="currentColor"
-                  stroke-width="2"
-                  class="feather feather-clock"
-                >
-                  <circle cx="12" cy="12" r="10"></circle>
-                  <polyline points="12 6 12 12 16 14"></polyline>
-                </svg>
-                <h6 class="name">Expires in :</h6>
-                <div
-                  class="time"
-                  id="clockdiv-1"
-                  data-hours="1"
-                  data-minutes="2"
-                  data-seconds="3"
-                >
-                  <ul>
-                    <li>
-                      <div class="counter">
-                        <div class="days">14</div>
-                      </div>
-                    </li>
-                    <li>
-                      <div class="counter">
-                        <div class="hours">23</div>
-                      </div>
-                    </li>
-                    <li>
-                      <div class="counter">
-                        <div class="minutes">22</div>
-                      </div>
-                    </li>
-                    <li>
-                      <div class="counter">
-                        <div class="seconds">45</div>
-                      </div>
-                    </li>
-                  </ul>
-                </div>
+              <p>
+                No pierdas esta oportunidad con un descuento especial solo por
+                esta semana.
+              </p>
+              <div class="contReloj">
+                <p>Expires in :</p>
+                <p id="horas"></p>
+                <p>:</p>
+                <p id="minutos"></p>
+                <p>:</p>
+                <p id="segundos"></p>
               </div>
             </div>
-            <div class="container p-3">
+
+            <div class="containerMainImgs p-3">
               <section id="main_imgs" class="main_imgs"></section>
             </div>
           </div>
